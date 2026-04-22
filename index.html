@@ -1,0 +1,194 @@
+
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Cake Cottage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#categories">Categories</a></li>
+      <li><a href="#cakes">All Cakes</a></li>
+      <li><a href="#order">Order</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>  
+  <section id="home" class="home">
+  <h1>Welcome to The Cake Cottage 🎂</h1>
+
+  <!-- Online slideshow -->
+  <div class="slideshow">
+    <img src="https://images.app.goo.gl/xEFRYBBhCrMHcXBt9" class="slide active" />
+    <img src="https://images.app.goo.gl/1ucDYYBiu2ttL9ox5" class="slide" />
+    <img src="https://images.app.goo.gl/JAjy3KsQ37Gfwc7M7" class="slide" />
+    <img src="https://images.app.goo.gl/eNZZbTXG3afqDDS2A" class="slide" />
+  </div>
+
+  <p>Your go-to destination for delicious handcrafted cakes!</p>
+</section>
+  
+
+
+    <h2>🏠 About Us</h2>
+    <p>At The Cake Cottage, we believe every celebration deserves a sweet centerpiece. Our cakes are freshly baked with love, using the finest ingredients. Whether it's a birthday, anniversary, or a casual craving, we've got the perfect cake for you!</p>
+  </section>  <section id="categories" class="categories">
+    <h2>Cake Categories</h2>
+    <div class="filter-bar">
+      <button onclick="filterCakes('all')">All</button>
+      <button onclick="filterCakes('classic')">Classic</button>
+      <button onclick="filterCakes('premium')">Premium</button>
+      <button onclick="filterCakes('cupcake')">Cupcakes</button>
+      <button onclick="filterCakes('occasion')">Occasion</button>
+    </div>
+  </section>  <section id="cakes" class="catalog-section">
+    <h2> All Cakes</h2>
+    <div class="catalog" id="catalog">
+      <!-- Classic Cakes -->
+<div class="cake" data-category="classic">
+  <img src="https://source.unsplash.com/300x200/?blackforest,cake" alt="Black Forest Cake">
+  <h3>Black Forest Cake</h3>
+  <p>₹499</p>
+  <button onclick="addToCart('Black Forest Cake', 499)">Add to Cart</button>
+</div>
+<div class="cake" data-category="classic">
+  <img src="https://source.unsplash.com/300x200/?vanilla,cake" alt="Vanilla Cake">
+  <h3>Vanilla Cake</h3>
+  <p>₹399</p>
+  <button onclick="addToCart('Vanilla Cake', 399)">Add to Cart</button>
+</div>
+<div class="cake" data-category="classic">
+  <img src="https://source.unsplash.com/300x200/?butterscotch,cake" alt="Butterscotch Cake">
+  <h3>Butterscotch Cake</h3>
+  <p>₹449</p>
+  <button onclick="addToCart('Butterscotch Cake', 449)">Add to Cart</button>
+</div>
+
+<!-- Premium Cakes -->
+<div class="cake" data-category="premium">
+  <img src="https://source.unsplash.com/300x200/?redvelvet,cake" alt="Red Velvet Cake">
+  <h3>Red Velvet Cake</h3>
+  <p>₹899</p>
+  <button onclick="addToCart('Red Velvet Cake', 899)">Add to Cart</button>
+</div>
+<div class="cake" data-category="premium">
+  <img src="https://source.unsplash.com/300x200/?blueberry,cake" alt="Blueberry Cake">
+  <h3>Blueberry Cake</h3>
+  <p>₹949</p>
+  <button onclick="addToCart('Blueberry Cake', 949)">Add to Cart</button>
+</div>
+<div class="cake" data-category="premium">
+  <img src="https://source.unsplash.com/300x200/?cheesecake" alt="Cheesecake">
+  <h3>Cheesecake</h3>
+  <p>₹999</p>
+  <button onclick="addToCart('Cheesecake', 999)">Add to Cart</button>
+</div>
+
+<!-- Cupcakes -->
+<div class="cake" data-category="cupcake">
+  <img src="https://source.unsplash.com/300x200/?cupcake,chocolate" alt="Chocolate Cupcake">
+  <h3>Chocolate Cupcake</h3>
+  <p>₹99</p>
+  <button onclick="addToCart('Chocolate Cupcake', 99)">Add to Cart</button>
+</div>
+<div class="cake" data-category="cupcake">
+  <img src="https://source.unsplash.com/300x200/?cupcake,strawberry" alt="Strawberry Cupcake">
+  <h3>Strawberry Cupcake</h3>
+  <p>₹99</p>
+  <button onclick="addToCart('Strawberry Cupcake', 99)">Add to Cart</button>
+</div>
+<div class="cake" data-category="cupcake">
+  <img src="https://source.unsplash.com/300x200/?cupcake,vanilla" alt="Vanilla Cupcake">
+  <h3>Vanilla Cupcake</h3>
+  <p>₹99</p>
+  <button onclick="addToCart('Vanilla Cupcake', 99)">Add to Cart</button>
+</div>
+
+<!-- Occasion Cakes -->
+<div class="cake" data-category="occasion">
+  <img src="https://source.unsplash.com/300x200/?birthday,cake" alt="Birthday Cake">
+  <h3>Birthday Cake</h3>
+  <p>₹799</p>
+  <button onclick="addToCart('Birthday Cake', 799)">Add to Cart</button>
+</div>
+<div class="cake" data-category="occasion">
+  <img src="https://source.unsplash.com/300x200/?anniversary,cake" alt="Anniversary Cake">
+  <h3>Anniversary Cake</h3>
+  <p>₹899</p>
+  <button onclick="addToCart('Anniversary Cake', 899)">Add to Cart</button>
+</div>
+<div class="cake" data-category="occasion">
+  <img src="https://source.unsplash.com/300x200/?wedding,cake" alt="Wedding Cake">
+  <h3>Wedding Cake</h3>
+  <p>₹1499</p>
+  <button onclick="addToCart('Wedding Cake', 1499)">Add to Cart</button>
+</div>
+
+<!-- More Varieties -->
+<div class="cake" data-category="premium">
+  <img src="https://source.unsplash.com/300x200/?oreo,cake" alt="Oreo Cake">
+  <h3>Oreo Cake</h3>
+  <p>₹699</p>
+  <button onclick="addToCart('Oreo Cake', 699)">Add to Cart</button>
+</div>
+<div class="cake" data-category="premium">
+  <img src="https://source.unsplash.com/300x200/?kitkat,cake" alt="Kitkat Cake">
+  <h3>Kitkat Cake</h3>
+  <p>₹749</p>
+  <button onclick="addToCart('Kitkat Cake', 749)">Add to Cart</button>
+</div>
+<div class="cake" data-category="classic">
+  <img src="https://source.unsplash.com/300x200/?coffee,cake" alt="Coffee Cake">
+  <h3>Coffee Cake</h3>
+  <p>₹599</p>
+  <button onclick="addToCart('Coffee Cake', 599)">Add to Cart</button>
+</div>
+<div class="cake" data-category="classic">
+  <img src="https://source.unsplash.com/300x200/?pineapple,cake" alt="Pineapple Cake">
+  <h3>Pineapple Cake</h3>
+  <p>₹429</p>
+  <button onclick="addToCart('Pineapple Cake', 429)">Add to Cart</button>
+</div>
+<div class="cake" data-category="cupcake">
+  <img src="https://source.unsplash.com/300x200/?mint,cupcake" alt="Mint Cupcake">
+  <h3>Mint Cupcake</h3>
+  <p>₹109</p>
+  <button onclick="addToCart('Mint Cupcake', 109)">Add to Cart</button>
+</div>
+<div class="cake" data-category="cupcake">
+  <img src="https://source.unsplash.com/300x200/?lemon,cupcake" alt="Lemon Cupcake">
+  <h3>Lemon Cupcake</h3>
+  <p>₹109</p>
+  <button onclick="addToCart('Lemon Cupcake', 109)">Add to Cart</button>
+</div>
+    </div>
+  </section>  <section id="order" class="cart-section">
+    <h2>🛒 Your Cart</h2>
+    <ul id="cart-list"></ul>
+    <p id="total">Total: ₹0</p>
+    <div id="checkout-form">
+      <h3>Checkout</h3>
+      <form onsubmit="submitOrder(event)">
+        <label>Your Name:</label>
+        <input type="text" id="name" required><label>Phone Number:</label>
+    <input type="tel" id="phone" required>
+
+    <label>Address:</label>
+    <textarea id="address" rows="3" required></textarea>
+
+    <button type="submit">Place Order</button>
+  </form>
+  <p id="order-msg"></p>
+</div>
+
+  </section>  <section id="contact" class="contact">
+    <h2>📞 Contact Us</h2>
+    <p>Email: info@cakecottage.in</p>
+    <p>Phone: +91-9876543210</p>
+    <p>Instagram: @thecakecottage</p>
+  </section>  <footer>
+    © 2025 The Cake Cottage | Internship Project
+  </footer>  <script src="script.js"></script></bod
